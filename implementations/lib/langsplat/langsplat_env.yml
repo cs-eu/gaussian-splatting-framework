@@ -1,0 +1,27 @@
+name: langsplat
+channels:
+  - nvidia
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip=22.3
+  - pytorch=2.2
+  - torchvision=0.17
+  - torchaudio=2.2
+  - pytorch-cuda=11.8
+  - open-clip-torch
+  - plyfile
+  - tqdm
+  - opencv
+  - tensorboard
+  - jaxtyping
+  - matplotlib
+  - typing-extensions
+  - pathlib
+  - ninja
+  - pip:
+      - submodules/segment-anything-langsplat
+      - submodules/langsplat-rasterization
+      - submodules/simple-knn
